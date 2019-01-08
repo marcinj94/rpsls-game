@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background-image: linear-gradient(to top, #cc208e 0%, #6713d2 100%);
+}
+
+.title {
+    text-align: center;
+    background-color: #222222;
+    padding: 40px 5px;
+    color: white;
+    box-shadow: 0 0 15px greenyellow;
+}
+
+.title-color {
+    color: #8F18B7;
+}
+
+.result-board {
+    border: 3px solid white;
+    border-radius: 5px;
+    width: 200px;
+    margin: 20px auto;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 15px;
+    color: white;
+    position: relative;
+}
+
+.user-label,
+.computer-label {
+    background-color: #222222;
+    font-size: 14px;
+    padding: 2px 5px;
+    position: absolute;
+
+}
+
+.user-label {
+    top: 50%;
+    left: -20px;
+    transform: translateY(-50%);
+}
+
+.computer-label {
+    top: 50%;
+    right: -25px;
+    transform: translateY(-50%);
+}
+
+.result-info {
+    text-align: center;
+    padding: 20px 10px;
+    color: white;
+    font-weight: bold;
+}
+
+img {
+    width: 60px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+img[title='rock'] {
+    width: 90px;
+}
+
+img[title='paper'] {
+    width: 65px;
+}
+
+img[title='scissors'] {
+    width: 100px;
+}
+
+img[title='lizard'] {
+    width: 95px;
+}
+
+img[title='spock'] {
+    width: 80px;
+}
+
+.select {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.choice {
+    margin: 10px;
+    width: 120px;
+    height: 120px;
+    border: 2px solid white;
+    position: relative;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.choice.active {
+    border: 2px solid black;
+    box-shadow: 0 0 15px black, 0 0 90px black;
+}
+
+.start {
+    display: block;
+    margin: 20px auto;
+    padding: 20px 30px;
+    font-size: 24px;
+    background-color: #222222;
+    border: 3px solid transparent;
+    font-weight: bold;
+    border-radius: 30px;
+    color: white;
+    cursor: pointer;
+    transition: .3s;
+}
+
+@media (min-width: 1024px) {
+
+    .start:hover {
+        background-color: transparent;
+        color: #222222;
+        border: 3px solid #222222;
+    }
+}
