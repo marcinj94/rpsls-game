@@ -66,6 +66,18 @@ body {
     font-weight: bold;
 }
 
+.wrong {
+    text-shadow: 0 0 25px red, 0 0 30px red, 0 0 60px red;
+}
+
+.win {
+    text-shadow: 0 0 25px green, 0 0 30px greenyellow, 0 0 60px green;
+}
+
+.lost {
+    text-shadow: 0 0 25px black, 0 0 30px black, 0 0 60px black;
+}
+
 img {
     width: 60px;
     position: absolute;
