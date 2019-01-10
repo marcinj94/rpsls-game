@@ -145,11 +145,18 @@ function whoWin() {
     }
 }
 
+function clearUserChoice() {
+    if (gameChoice.userChoice) document.querySelector(`[data-option="${gameChoice.userChoice}"]`).classList.remove('active');
+    gameChoice.userChoice = '';
+}
+
 function startGame() {
 
     computerChoice();
 
     whoWin();
+
+    clearUserChoice();
 }
 
 startButton.addEventListener('click', startGame);
