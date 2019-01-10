@@ -1,6 +1,6 @@
 # Rock Paper Scissors Lizard Spock - game:
     
-    The game is an expansion on the game called Rock, Paper, Scissors. Each player picks a variable and reveals it at the same time. The winner is the one who defeat others. 
+The game is an expansion on the game called Rock, Paper, Scissors. Each player picks a variable and reveals it at the same time. The winner is the one who defeat others. 
 
 - Scissors cut Paper
 - Paper covers Rock
